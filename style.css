@@ -1,0 +1,65 @@
+/* CSS Specificity */
+
+/* CSS Specificity is the set of rules applied to 
+the CSS selectors to determine which styles are 
+applied to an element. Every selector has a 
+specificity value */
+
+/* The more specific a CSS selector is, the larger 
+it's the specificity value hence, it will be applied 
+to an element. */
+
+/*!   0                0                   0                  0   */
+/* inline */     /*  id  */           /* class & */      /* element */
+/* style */    /*          */      /* attributes */    /* pseudo-element */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  0.0.1.0  */
+.header {
+    /* color: red; */
+}
+
+/* 0.1.0.0 */
+#header-id {
+    /* color: blue; */
+}
+
+/* 0.0.0.1 */
+h1 {
+    /* color: green; */
+}
+
+/*  0.0.1.1 */
+h1.header {
+}
+
+.header#header-id {
+}
+
+.header.header-class {
+}
+
+#header-id {
+    color: green;
+}
+
+#header-id {
+    color: blue !important;
+}
+
+input.form-control[id="tel"] {
+
+}
